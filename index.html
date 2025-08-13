@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation & Charity</title>
+    <link  href="favicon.ico" type="image/x-icon">
+    <!--  bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .Motive {
+            background: url('NGO-image.jpg') center/cover no-repeat;
+            color: whitesmoke;
+            text-align: center;
+            padding: 100px 20px;
+
+        }
+        .Motive h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .project-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .lead{
+            color: whitesmoke;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Donation & Charity</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Motive Section -->
+    <section id="home" class="Motive">
+        <h1>Together We Can Make a Difference</h1>
+        <p class="lead">Join us in our mission to help the underprivileged and create a better future.</p>
+        <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Our Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="Education.jpg" class="card-img-top" alt="Education">
+                        <div class="card-body">
+                            <h5 class="card-title">Education for All</h5>
+                            <p class="card-text">Providing free education to children in rural areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="Food-Distribution.jpg" class="card-img-top" alt="Food Drive">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Drives</h5>
+                            <p class="card-text">Distributing food to needy families every week.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="Heathcare-camp.jpeg" class="card-img-top" alt="Healthcare">
+                        <div class="card-body">
+                            <h5 class="card-title">Healthcare Camps</h5>
+                            <p class="card-text">Free health checkups and medicines for the poor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="fw-bold">Make a Donation</h2>
+            <p>Your support helps us change lives. Every contribution counts!</p>
+            <button onclick="donateNow()" class="btn btn-primary btn-lg">Donate Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-success text-white text-center py-3">
+        <p class="mb-0">© 2025 Helping Hands NGO | Contact: fahadansari2227@gmail.com & mohdkavish30112001@gmail.com</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function donateNow() {
+            alert("Thank you for your support! Redirecting to payment gateway...");
+            window.location.href = "https://yourpaymentlink.com"; // Replace with actual payment link
+        }
+    </script>
+</body>
+</html>
